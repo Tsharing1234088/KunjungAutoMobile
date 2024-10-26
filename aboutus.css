@@ -1,0 +1,715 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar{
+        display: none;
+    }
+   #group img{
+    margin-bottom: 0;
+    width: 100%;
+    filter: blur(2px);
+   }
+   .pat{
+    text-align: center;
+    color: white;
+  
+   }
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: black;
+}
+
+
+
+   #constant{
+    width: 700px;
+    position: relative;
+    left: 400px;
+    padding: 10px;
+   }
+   .par{
+    color: #0c0c0c;
+   }
+   .hit{
+    text-align: center;
+    color: white;
+   }
+   #backside{
+    background-image: url("adc685fee66ede448182584111b70292.jpg");
+   }
+#qual{
+    color: rgb(241, 233, 233);
+    position: relative;
+    bottom: 300px;
+    left: 580px;
+    font-family: serif;
+    font-size:xx-large
+
+}
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.mission {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.5s, box-shadow 0.5s;
+    position: relative;
+    height: 450px;
+}
+
+.mission:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+p {
+    padding: 10px;
+    color: #afa9a9; /* Adjust text color for better contrast */
+}
+
+
+
+
+
+
+.about-section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+   
+}
+
+.card {
+    width: 200px;
+    height: 400px;
+    perspective: 1000px;
+}
+
+.card-inner {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+   
+}
+
+.card.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(109, 70, 70, 0.2);
+}
+
+.card-front {
+    background-color: #ffffff;
+    color: #020202;
+}
+
+.card-back {
+    background-color: #eebcbc;
+    color: #fff;
+    transform: rotateY(180deg);
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 20px 0;
+    
+}
+.card p{
+    color: black;
+}
+.part{
+    color: rgb(231, 97, 97);
+    font-family:monospace;
+    font-size: xx-large;
+    font-weight: 300;
+}
+
+.card p {
+    padding: 0 10px;
+   text-align: center;
+} 
+
+
+
+
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* header n footer */
+header {
+    padding: 0px;
+    background-color: rgba(13, 13, 44, 12);
+    display: flex;
+    height: auto;
+    justify-content: space-around;
+    top:0px;
+    overflow-y: hidden;
+}
+
+.logo {
+    height: 120px;
+    width: 120px;   
+   
+}
+
+#navbar {
+    display: flex;
+    margin: 0px;
+    font-size: 19px;
+    padding-right: 0px;
+    
+}
+
+#navbar li {
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 25px;
+    padding-top: 0px;
+    margin-left: 55px;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: #E2DAD6;
+    
+}
+
+#navbar li a:hover, 
+#navbar #active {
+    color: rgb(236, 191, 11);
+    border-bottom: 3px solid ;
+    text-decoration: none;
+}
+
+#log {
+    list-style-type: none;
+    display: flex;
+}
+
+#log li {
+    display: inline-flex;
+    padding-left: 740px;
+    padding-top: 20px;
+}
+
+#log a {
+    display: flex;
+    padding: 5px 25px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+#log a:hover {
+    background-color: rgb(53, 53, 53);
+}
+
+#log li:nth-child(2) a:hover {
+    background-color: #959798;
+}/* Mobile Menu */
+#mobile-menu {
+    display: none;
+    list-style-type: none;
+    background-color: #01041f;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+}
+
+#mobile-menu li {
+    margin: 10px 0;
+}
+
+#mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#mobile-menu a:hover {
+    color: #f0a500;
+}
+#menu-icon{
+    display: none;
+}
+
+footer {
+    background-color: rgba(13, 13, 44, 12);
+    border: 1px solid black;
+    height: 100%;
+    margin-top: 0px;
+    width: 100%;
+}
+
+#footers {
+    display: flex;
+    /* flex-wrap: wrap; Ensures elements wrap without extra space */
+    padding-bottom: 50px;
+    justify-content: space-between; /* Ensure even space distribution */
+}
+#kunjung, #ifo, #quick, #sub {
+    display: inline-block;
+    width: 20%; /* Elements will take up roughly 1/4 of the available width */
+    position: relative;
+    padding: 0; /* No extra padding */
+    margin: 0;  /* No extra margin */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#kunjung, #ifo, #quick, #sub h3 {
+    font-size: 16px;
+    color: #fff;
+}
+
+#colorSpan {
+    color: rgb(237, 218, 8);
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+#infoHeads {
+    color: rgb(239, 244, 248);
+    text-decoration: underline;
+    padding-left: 80px;
+}
+
+.footerInfo {
+    list-style-type: none;
+}
+
+.footerInfo li a {
+    color: azure;
+    text-decoration: none;
+    padding-left: 50px;
+}
+
+.footerInfo li a:hover {
+    color: rgba(242, 234, 10, 0.897);
+    text-decoration: underline;
+    
+}
+
+#active {
+    color: rgb(220, 213, 6);
+    text-decoration: underline;
+    
+}
+
+.footerFree{
+    list-style-type: none;
+}
+
+.quickHead {
+    color: rgb(251, 253, 254);
+    text-decoration: underline;
+    padding-left: 40px;
+    
+}
+
+.footerQuick {
+    color: azure;
+    list-style-type: none;
+}
+
+.footerQuick li a {
+    color: azure;
+    text-decoration: none;
+}
+
+.footerQuick li a:hover {
+    color: rgb(229, 200, 10);
+}
+
+
+
+#subscribesHeads {
+    color: rgb(236, 240, 243);
+    text-decoration: underline;
+   
+}
+
+ #footerSubscribes {
+    display: flex;
+    list-style-type: none;
+}
+
+#footerSubscribes li a {
+    color: aliceblue;
+    padding: 5px;
+}
+
+#footerSubscribes li a:hover {
+    color: rgb(230, 219, 7);
+}
+#logo2{
+    height: 160px;
+   width: 150px;
+ }
+ #fod {
+    text-align: center;
+    background-color: #2b2d42;
+    color: #fff;
+  }
+  @media (max-width: 420px) {
+    #navbar {
+        display: none;
+    }
+
+    #nav-icon {
+        display: block;
+    }
+
+    #log {
+        display: none;
+    }
+}
+
+
+@media (max-width: 430px) {
+    .container{
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        overflow: hidden;
+        width: 300px;
+        text-align: center;
+        transition: transform 0.5s, box-shadow 0.5s;
+        position: relative;
+        height: 360px;
+       
+    }
+    
+    
+    .hit{
+        text-align: center;
+        color: white;
+        position: relative;
+        right: 550px;
+    }
+    .qual{
+        color: rgb(241, 233, 233);
+    position: relative;
+    bottom: 100px;
+    left: 70px;
+    font-family: serif;
+    font-size: large;
+    }
+    .pat{
+        text-align: center;
+    color: white;
+    position: relative;
+    right: 460px;
+    padding: 5px;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {
+    /* Navbar */
+    #navbar {
+        display: none; /* Hide the normal navbar on small screens */
+    }
+    header{
+        height: 80px;
+    }
+
+    /* Mobile Menu Icon */
+    #nav-icon {
+        display: block; /* Show the mobile menu icon */
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+
+    /* Mobile Menu */
+    #mobile-menu {
+        display: none; /*Initially hidden */
+        list-style-type: none;
+        background-color: rgba(13, 13, 44, 12);
+        padding: 1rem;
+        position: absolute;
+        top: 83px;
+        left:0px;
+        right: 0px;
+        z-index: 1000;
+    }
+
+    #mobile-menu.active {
+        display: block; /* Display the mobile menu when active */
+    }
+
+    #mobile-menu li {
+        margin: 0;
+        text-align: center;
+        padding: 5px;
+    }
+
+    #mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        display: block;
+        
+        
+    }
+
+    /* Style for items in the mobile menu */
+
+    #mobile-menu a :hover{
+        background-color: rgb(223, 243, 6);
+    }
+    
+    #mobile-menu a :hover,
+    #mobile-menu #active{
+        background-color: rgba(242, 242, 17, 0.888);
+    } 
+    
+
+    /* Adjust logo positioning on mobile */
+    .logo {
+        position: relative;
+        left: 10px;
+        bottom: 12px;
+        height: 80px;
+        width: 80px;
+    }
+
+    /* Adjust the logo in the center */
+    header {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    #footers {
+        display: block; /* Stack the elements vertically */
+        padding-bottom: 2px; /* Adjust padding */
+        justify-content: center; /* Center-align the content */
+    }
+
+    /* Footer sections will stack vertically and take full width */
+    #kunjung, #ifo, #quick, #sub {
+        width: 100%; /* Full width for each section */
+        display: block; /* Stack elements */
+        margin-bottom: 20px; /* Add space between stacked items */
+        text-align: center; /* Center-align text for better mobile UX */
+    }
+
+    /* Adjust headings and font sizes for smaller screens */
+    #kunjung h2, #ifo h2, #quick h2, #sub h2 {
+        font-size: 12px; /* Slightly smaller font size for mobile */
+    }
+    h2#infoHeads {
+        padding-left: 5px;
+        padding-top: 6px;
+    }
+
+    /* Adjust text and link padding */
+    #infoHeads, .quickHead, #subscribesHeads {
+        padding-left: 0; /* Remove padding for smaller screens */
+        text-align: center; /* Center-align headings */
+
+    }
+    
+
+    .footerInfo li a, .footerQuick li a {
+        padding-left: 0; /* Remove padding for links */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    /* Adjust the footer subscribe links */
+    #footerSubscribes {
+        display: flex; /* Stack subscription elements */
+        text-align: center; /* Center-align the content */
+    }
+
+    #footerSubscribes li {
+        margin-bottom: 10px; /* Space between subscription items */
+    }
+
+    #footerSubscribes li a {
+        font-size: 10px; /* Adjust font size */ 
+        padding-left: 10px; 
+        position: relative;
+        left: 90px;
+    }
+    #logo2{
+        display: none;
+    }
+        
+
+        #log{
+         position: absolute;
+         right: 65px;
+        }
+        #log a{
+            font-size: 10px;
+           margin-left: 10px;
+           
+        }
+    }
+    @media (max-width: 420px){
+        #nav-icon i{
+            color: aliceblue;
+            position: relative;
+            right: 55rem;
+            
+        }
+        #map{
+            height: 300px;
+            width: 250px;
+            position: relative;
+            right: 10px;
+        }
+        Img .logo{
+            margin-bottom: 55px;
+           }
+
+           h2#infoHeads {
+            padding-right:40px;
+          }
+          #kunjung h2 span{
+            font-size: 18px;
+            
+          }
+          .footerFree li{
+            font-size: 10px;
+            padding-left: 30px;
+          }
+          .footerInfo li a{
+            font-size: 10px;
+            position: relative;
+            right: 45px;
+          }
+          .footerQuick li a{
+            font-size: 10px;
+            padding-right: 30px;
+          }
+          .quickHead{
+            padding-right: 47px;
+          }
+          .background {
+            position: relative;
+            bottom: 420px;
+            width: 450px;
+            height: 150px;}
+            
+          .footerFree li{
+            position: relative;
+            right: 55px;
+            justify-content: center;
+            margin: 6px;
+           word-spacing: -0.5px;
+          }
+         #footerSubscribes li a i{
+            position: relative;
+            right: 115px;
+         }
+         #footers{
+            height: 415px;
+         }
+         #fod{
+            height: 25px;
+         }
+          #fod p{
+            font-size: 14px;
+          }
+          div.carousel-inner{
+            height: 357px;
+          }
+          .carousel-inner img{
+            position: relative;
+            bottom: 225px;
+          }
+          .nav-icon #menu-icon{
+            display: flex;
+            color: aliceblue;
+            font-size: 24px;
+          }
+        }
